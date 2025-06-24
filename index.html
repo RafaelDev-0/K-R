@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K+R</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="boas-vindas animate__animated animate__fadeInDown">
+    <h1>Oi kk rs</h1>
+    <p>Esse site é só pra dizer o quanto você é maravilhosa e linda😜</p>
+    <button id="playButton">💿 Clica aqui kk rs</button>
+    <audio id="backgroundMusic" src="https://github.com/OyaEstetica/calcinha-preta/raw/main/magica_HLPJ10FM.mp3"></audio>
+  </header>
+
+  <section class="galeria">
+    <h2 class="titulo-secao">Ó vc ai (Lindona)</h2>
+    <div class="fotos">
+      <img src="img/KAMILA SARAIVA.jpeg" alt="Foto 1" />
+      <img src="img/2025-06-24_16h43_14.jpg" alt="Foto 2" />
+      <img src="img/2025-06-24_16h41_57.jpg" alt="Foto 3" />
+    </div>
+  </section>
+
+  <section class="memes">
+    <h2 class="titulo-secao">Ó nois kk rs (Nós somos lindos)</h2>
+    <div class="mural-memes">
+      <img src="img/ibira.jpg" alt="Meme 1" />
+       <video class="video-meme" src="img/video.mp4" autoplay loop muted playsinline></video>
+      <img src="img/shop.jpg" alt="Meme 3" />
+    </div>
+  </section>
+
+  <footer>
+    <p>Sobe a tela cabacinha😜🖕
+    </p>
+  </footer>
+
+  <script>
+    // Scroll suave
+    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Música de fundo
+    const playButton = document.getElementById('playButton');
+    const backgroundMusic = document.getElementById('backgroundMusic');
+
+    playButton.addEventListener('click', () => {
+      backgroundMusic.play();
+    });
+  </script>
+</body>
+</html>

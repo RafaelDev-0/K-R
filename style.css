@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fdf6f0 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header.boas-vindas {
+  text-align: center;
+  background: #975094;
+  padding: 4rem 1rem;
+  border-bottom: 4px dashed #840c94;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#playButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #000000;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+#playButton:hover {
+  background-color: #840c94;
+}
+
+.titulo-secao {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Lucida Handwriting', cursive;
+  color: #000000;
+  position: relative;
+}
+
+.titulo-secao::after {
+  content: '✧';
+  display: block;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  color: #840c94;
+}
+
+.fotos,
+.mural-memes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.fotos img,
+.mural-memes img {
+  width: 250px;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background: #fff8f0;
+}
+
+.fotos img:hover,
+.mural-memes img:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #840c94;
+  font-size: 1rem;
+  color: #ffffff;
+  border-top: 3px dotted #975094;
+}
+
+.video-meme {
+  width: 250px;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #fff8f0;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.video-meme:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
