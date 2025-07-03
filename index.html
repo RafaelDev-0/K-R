@@ -9,10 +9,10 @@
 </head>
 <body>
   <header class="boas-vindas animate__animated animate__fadeInDown">
-    <h1>Oi kk rs</h1>
+    <h1>Oi Amor kk rs</h1>
     <p>Esse site é só pra dizer o quanto você é maravilhosa e linda😜</p>
     <button id="playButton">💿 Clica aqui kk rs</button>
-    <audio id="backgroundMusic" src="https://github.com/OyaEstetica/calcinha-preta/raw/main/FICA%20COMIGO%20ESSA%20NOITE.mp3"></audio>
+    <audio id="backgroundMusic" src="https://github.com/OyaEstetica/calcinha-preta/raw/main/Olha.mp3"></audio>
   </header>
 
   <section class="galeria">
@@ -30,6 +30,16 @@
       <img src="img/ibira.jpg" alt="Meme 1" />
        <video class="video-meme" src="img/video.mp4" autoplay loop muted playsinline></video>
       <img src="img/shop.jpg" alt="Meme 3" />
+    </div>
+  </section>
+
+  <section class="galeria">
+    <h2 class="titulo-secao">Nós, <br> muitos anos atrás, antes de nos conhecermos...</h2>
+    <div class="fotos">
+      <img src="img/rafa_de_oculos (1).jpg" alt="Foto 1" />
+      <img src="img/ursi.jpg" alt="Foto 2" />
+      <img src="img/Rafa_na_lente.jpg" alt="Foto 3" />
+      <img src="img/Kami_de_trança.jpg" alt="Foto 3" />
     </div>
   </section>
 
@@ -56,6 +66,16 @@
     playButton.addEventListener('click', () => {
       backgroundMusic.play();
     });
+
+    function criarCoracao() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.textContent = '💜';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+  }
+  setInterval(criarCoracao, 300);
   </script>
 </body>
 </html>

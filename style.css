@@ -1,9 +1,31 @@
 body {
   margin: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Dancing Script', cursive;
   background: #fdf6f0 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   color: #333;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.heart {
+  position: fixed;
+  top: -50px;
+  color: #b266ff;
+  font-size: 24px;
+  animation: fall 6s linear infinite;
+  z-index: 999;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
 }
 
 header.boas-vindas {
@@ -32,6 +54,7 @@ header p {
   border: none;
   border-radius: 10px;
   font-size: 1rem;
+  font-family: 'Dancing Script', cursive;
   color: white;
   cursor: pointer;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
@@ -46,7 +69,7 @@ header p {
   font-size: 2rem;
   text-align: center;
   margin-top: 3rem;
-  font-family: 'Lucida Handwriting', cursive;
+  font-family: 'Great Vibes', cursive;
   color: #000000;
   position: relative;
 }
